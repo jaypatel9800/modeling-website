@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #02040a;
+}
+/*-- NAVBAR --*/
+
+.logo a {
+  font-size: 25px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.logo a:hover{
+  letter-spacing: 2px;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 1rem 3rem;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.plus {
+  display: none;
+  background-color: transparent;
+  border: transparent;
+  font-size: 40px;
+  color: #fdfdfd;
+  transition: all 0.4s ease;
+}
+.plus:hover, .plus:active{
+  transform: rotate(90deg);
+}
+ul {
+  display: flex;
+}
+li {
+  padding: 0.5rem 1rem;
+  align-self: center;
+}
+li a{
+  transition: all 0.3s linear;
+}
+a {
+  color: #fdfdfd;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+li a:hover, li a:active{
+  border-bottom-style: ridge;
+  letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .plus {
+    display: block;
+  }
+  .small {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    background-color: #02040a;
+  }
+  .nav-toggle{
+    background-color: transparent;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 50px;
+    background-color: #02040a;
+  }
+  a {
+    font-size: 25px;
+  }
+  .toggler {
+    display: none;
+  }
+}
+
+/*-- MAIN PAGE --*/
+
+.main {
+  background-image: url(./image/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.myself {
+  background-color: #02040a;
+  opacity: 0.9;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  color: #fdfdfd;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.myself h2{
+  font-family: 'Dancing Script', cursive !important;
+  letter-spacing: 5px;
+}
+.myself h1, .myself h2, .myself button{
+  margin: 0 50px 0 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.myself button{
+  background-color: #fdfdfd;
+  border: 1px solid #fdfdfd;
+  color: #02040a;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+.myself button:hover{
+  background-color: transparent;
+  letter-spacing: 5px;
+  color: #fdfdfd;
+  border: 1px solid #fdfdfd;
+}
+@media only screen and (max-width: 768px) {
+  .myself {
+    width: 100%;
+    align-items: center;
+  }
+  .myself h1, .myself h2, .myself button{
+    text-align: center;
+  }
+}
+ /*-- ABOUT --*/
+.about{
+  display: flex;
+  height: 100vh;
+}
+.about .signature{
+  font-family: 'Dancing Script', cursive !important;
+}
+.about .first{
+  background-image: url(./image/2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about div, .words div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  color: #fdfdfd;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 768px){
+  .about{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+  .about div, .words div{
+    display: flex;
+    height: 100vh;
+  }
+}
+
+/*-- MY WORDS --*/
+.words{
+  display: flex;
+  height: 100vh;
+}
+.words .second{
+  background-image: url(./image/3.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.words button{
+  background-color: #fdfdfd;
+  border: 1px solid #fdfdfd;
+  color: #02040a;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  letter-spacing: 2px;
+}
+.words button:hover{
+  background-color: transparent;
+  color: #fdfdfd;
+  border: 1px solid #fdfdfd;
+}
+@media only screen and (max-width: 768px){
+  .words{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 200vh;
+  }
+}
+
+.rev{
+  display: flex;
+  height: 100vh;  
+}
+
+.thirds{
+  background-image: url(./image/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#revs, #name{
+  letter-spacing: 2px;
+  text-align: center;
+}
+#name{
+  font-family: 'Dancing Script', cursive !important;
+}
+.rev div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content:space-evenly;
+  align-items:center;
+  color: #fdfdfd;
+  padding: 0 40px;
+}
+.rev div div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.prev , .next{
+  background-color: #fdfdfd;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fdfdfd;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+.prev:hover, .next:hover{
+  background-color: transparent;
+  fill:#fdfdfd;
+  transform: rotate(360deg);
+}
+
+.prev:active, .next:active{
+  transform: scale(0.9);
+}
+@media only screen and (max-width: 768px){
+  .rev{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+  .rev .trd, .rev .thirds{
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+.contact{
+  display: flex;
+  height: 100vh;
+}
+.contact-pic{
+  background-image: url(./image/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.contact-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fdfdfd;
+}
+.contact-info .name p{
+  font-size: 10px;
+  padding: 0.5rem 0;
+}
+.contact-info h1{
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+input, textarea{
+  background-color: transparent;
+  border: 1px solid #fdfdfd;
+  color: #fdfdfd;
+  padding: 1rem 3rem 1rem 1rem;
+}
+.contact-info button{
+  background-color: #fdfdfd;
+  border: 1px solid #fdfdfd;
+  color: #02040a;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.contact-info button:hover{
+  background-color: transparent;
+  border: 1px solid #fdfdfd;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width:768px) {
+  .contact{
+    flex-direction: column-reverse;
+    height: 200vh;
+  }
+  .contact-pic{
+    height: 100vh;
+  }
+  .contact-info{
+    height: 100vh;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="small">
+            <div class="logo"><a href="#home">logo</a></div>
+            <button class="plus">+</button>
+        </div>
+        <ul>
+            <li class="btn-normal">
+                <a href="#home">home</a>
+            </li>
+            <li class="btn-normal">
+                <a href="#about">about me</a>
+            </li>
+            <li class="btn-normal">
+                <a href="#work">my work</a>
+            </li>
+            <li class="btn-normal">
+                <a href="#review">reviews</a>
+            </li>
+            <li class="btn-normal">
+                <a href="#contact">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main" id="home">
+        <div class="myself">
+            <h1>I'M JERRY</h1>
+            <h2>Model / Photographer / Designer</h2>
+            <button>my work</button>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="first"></div>
+        <div>
+            <h1>ABOUT ME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi sunt tenetur harum explicabo
+                pariatur minus optio unde, incidunt doloremque impedit sit. Temporibus qui nesciunt vel quod quam
+                pariatur. Assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus
+                labore, totam accusamus aliquam officia impedit non fuga itaque culpa natus amet rem nulla velit soluta
+                voluptates rerum corporis commodi!</p>
+            <h1 class="signature">My Signature</h1>
+        </div>
+    </div>
+
+    <div class="words" id="work">
+        <div>
+            <h1>SEE MY WORDS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi sunt tenetur harum explicabo
+                pariatur minus optio unde, incidunt doloremque impedit sit. Temporibus qui nesciunt vel quod quam
+                pariatur. Assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus
+                labore, totam accusamus aliquam officia impedit non fuga itaque culpa natus amet rem nulla velit soluta
+                voluptates rerum corporis commodi!</p>
+            <button>MY PORTFOLIO</button>
+        </div>
+        <div class="second"></div>
+    </div>
+
+    <div class="rev" id="review">
+        <div class="thirds"></div>
+        <div class="trd">
+            <h1>CLIENT SAYING</h1>
+            <p id="revs">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out
+                chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four.
+            </p>
+            <h2 id="name">Johnnie Woods</h2>
+            <div>
+                <button class="prev" onclick="prev()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+                    </svg></button>
+                <button class="next" onclick="next()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+                    </svg></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-info">
+            <h1>contact info</h1>
+            <div class="name">
+                <p>NAME</p>
+                <input type="text" required>
+            </div>
+            <div class="name">
+                <p>EMAIL</p>
+                <input type="text" required>
+            </div>
+            <div class="name">
+                <p>SUBJECT</p>
+                <input type="text" required>
+            </div>
+            <div class="name">
+                <p>MASSAGE</p>
+                <textarea cols="30" rows="7"></textarea>
+            </div>
+            <button>submit</button>
+        </div>
+        <div class="contact-pic"></div>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="./app.js"></script>
+</body>
+
+</html>
